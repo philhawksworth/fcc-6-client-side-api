@@ -10,6 +10,15 @@ The last of our 6 code examples, this example builds on [example 5](https://find
 
 Here in the video, we add JavaScript to use access the user's location via the Geolocation API, and then request local weather data from https://openweathermap.org/ which is then added to the page.
 
+## Prerequisites
+
+This code will make use of a browser API which can only be used when accessed over a secure HTTPS connection. To configure your local development environment to serve requests over HTTPS you'll need to first create a certificate for local testing, and ensure that you rlocal machine trusts that cert. The confioguration of browsersync in Eleventy is [shown in the video](https://youtu.be/A_l0qrPUJds?t=157m40s)
+
+- [Generate a free certificate for localhost](https://letsencrypt.org/docs/certificates-for-localhost/)
+- [Trusting your local certificate](https://www.youtube.com/watch?time_continue=75&v=TGrX8XgSuZ4)
+
+By default, [sites on Netlify are automatically configured with a free certifcate](https://docs.netlify.com/domains-https/https-ssl/?utm_source=github&utm_medium=fcc-examples-pnh&utm_campaign=devex#certificate-service-types) provided by LetsEncrypt, so no additional steps will be reuired in the CI/CD and hosting environments.
+
 ## Local development
 
 To work on this example locally, you can clone the repository and start editing, although there are a few pre-requisites:
