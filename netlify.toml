@@ -2,3 +2,7 @@
   command = "npm run build"
   publish = "dist"
   functions = "src/_functions"
+
+[template.environment]
+  NEWS_API_KEY = "free API key from https://newsapi.org"
+  WEATHER_API_KEY = "free API key from https://openweathermap.org"
